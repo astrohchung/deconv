@@ -465,6 +465,11 @@ def plot_2dmap(map_file, map_kind, crange=[], cmap=matplotlib.cm.RdBu_r, title='
     return crange
 
 
+# ## Below result can be compared with 2D kinemtics maps at Marvin
+# * Result from the original MaNGA data cube only ('8313-12705_ORI_STELLAR_VEL.png', '8313-12705_ORI_STELLAR_SIGMA.png'). 
+# * Note that Marvin shows result with Voronoi binned data.
+# * https://dr16.sdss.org/marvin/galaxy/8313-12705/ Make sure to turn on 'Map/SpecView' switch.
+
 map_file='manga-'+plateifu+'-LOGCUBE_2DLOS.fits'
 map_kind='STELLAR_VEL'
 cmap=matplotlib.cm.RdBu_r

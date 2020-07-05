@@ -31,7 +31,7 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
   
   The example code downloads and produces multiple files:
   - Downloads 'manga-8313-12705-LOGCUBE.fits.gz', '8313-12705.png' and 'drpall-v2_4_3.fits' from SDSS-IV DR16 archieve.
-  - Produces deconvolved MaNGA data cube ('manga-8313-12705-LOGCDCUBE.fits.gz')
+  - Produces deconvolved MaNGA data cube ('manga-8313-12705-LOGCDCUBE.fits')
   - Produces 2D kinematics measurements result from both the original and the deconvolved MaNGA data cube ('manga-8313-12705-LOGCUBE_2DLOS.fits', manga-8313-12705-LOGDCCUBE_2DLOS.fits)
   - Produces five plots ('8313-12705_spectrum_37_37.png', '8313-12705_2dflux.png', '8313-12705_ORI_STELLAR_VEL.png', '8313-12705_DECONV_STELLAR_VEL.png', '8313-12705_ORI_STELLAR_SIGMA.png', '8313-12705_DECONV_STELLAR_SIGMA.png')
 
@@ -54,7 +54,7 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
   4. Open "deconv_example_manga.ipynb" jupyter notebook file.
 
 
-## MODIFICATION HISTORY:
+## Modification History:
     - Haeun Chung, Jul. 5, 2020: Initial Commit
     - Haeun Chung, Jul. 5, 2020: Modify to use miles model templates in pPXF package, remove compression (gzip) command on deconvolved file
     - Haeun Chung, Jul. 5, 2020: Update instruction for Windows users
