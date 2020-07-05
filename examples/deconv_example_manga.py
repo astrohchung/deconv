@@ -40,6 +40,13 @@ sys.path.append(parentdir)
 from deconv import cube_deconv
 from ppxf_wrap import ppxf_wrap
 
+import warnings
+
+if True:
+    print('Set warnings.filterwarnings as "ignore"')
+    print('Warning Message will not be printed')
+    warnings.filterwarnings("ignore")
+
 
 # ---
 # ## Download MaNGA Data & Catalog
