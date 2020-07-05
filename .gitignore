@@ -1,0 +1,16 @@
+*~
+*.pk
+*.ps
+*.fits
+*.fit
+*.jpg
+*.png
+*.tar.gz
+*.tar
+*.gz
+*.gzip
+*.pdf
+*.cpython*.pyc
+.ipynb_checkpoints
+.ipynb_checkpoints/*
+.*.gzip*
