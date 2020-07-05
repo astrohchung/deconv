@@ -33,7 +33,7 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
   - Downloads 'manga-8313-12705-LOGCUBE.fits.gz', '8313-12705.png' and 'drpall-v2_4_3.fits' from SDSS-IV DR16 archieve.
   - Produces deconvolved MaNGA data cube ('manga-8313-12705-LOGCDCUBE.fits')
   - Produces 2D kinematics measurements result from both the original and the deconvolved MaNGA data cube ('manga-8313-12705-LOGCUBE_2DLOS.fits', manga-8313-12705-LOGDCCUBE_2DLOS.fits)
-  - Produces five plots ('8313-12705_spectrum_37_37.png', '8313-12705_2dflux.png', '8313-12705_ORI_STELLAR_VEL.png', '8313-12705_DECONV_STELLAR_VEL.png', '8313-12705_ORI_STELLAR_SIGMA.png', '8313-12705_DECONV_STELLAR_SIGMA.png')
+  - Produces six plots ('8313-12705_spectrum_37_37.png', '8313-12705_2dflux.png', '8313-12705_ORI_STELLAR_VEL.png', '8313-12705_DECONV_STELLAR_VEL.png', '8313-12705_ORI_STELLAR_SIGMA.png', '8313-12705_DECONV_STELLAR_SIGMA.png')
 
   
 ## Short note for beginners: 
@@ -42,7 +42,7 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
       * Windows:
         * Download this repository by clicking "Clone or Download" - "Download ZIP" in this page
         * Unzip the downloaded ZIP file. (Recommended directory for Windows users: Documents)
-        * Needs to download an outdated version of ppxf from https://www-astro.physics.ox.ac.uk/~mxc/software/#ppxf (search page with 'outdated version of ppxf' and click the hyperlink on 'here') 
+        * Need to download an outdated version of ppxf from https://www-astro.physics.ox.ac.uk/~mxc/software/#ppxf (search page with 'outdated version of ppxf' and click the hyperlink on 'here') 
         * Unzip the ppxf outdated version file and put the 'ppxf' folder at the same directory as this file. 
         * For example, if this deconvolution file is located at the 'C:\Users\username\deconv', put the 'ppxf' folder at the same directory so the 'ppxf.py' file will be located at 'C:\Users\username\deconv\ppxf\ppxf.py'
       * Mac/Linux with terminal:
