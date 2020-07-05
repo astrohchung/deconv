@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# !jupyter nbconvert --no-prompt --to=python deconv.ipynb 
+
+
 import numpy as np
 from scipy.signal import convolve2d 
 from os import path, system
@@ -101,7 +107,9 @@ def cube_deconv(flux, wave, mask, psf_fwhm_func, pixelscale=0.5, niter=20,
     
     dcflux=flux.copy()
     dcmask=mask.copy()
+
     print('Start Deconvolution')
+
     n_finish=0
     t_start=perf_counter()
     for i in range(len(wave)):

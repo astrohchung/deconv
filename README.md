@@ -19,7 +19,7 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
   type and execute the following commands on the git-installed Linux 
   terminal
   
-    git clone git@github.com:astrohchung/deconv.git
+    git clone https://github.com/astrohchung/deconv.git
     
   if you would like to check whether the program is successfully installed,
   please run the simple example code as below.
@@ -42,10 +42,13 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
       * Windows:
         * Download this repository by clicking "Clone or Download" - "Download ZIP" in this page
         * Unzip the downloaded ZIP file. (Recommended directory for Windows users: Documents)
+        * Needs to download an outdated version of ppxf from https://www-astro.physics.ox.ac.uk/~mxc/software/#ppxf (search page with 'outdated version of ppxf' and click the hyperlink on 'here') 
+        * Unzip the ppxf outdated version file and put the 'ppxf' folder at the same directory as this file. 
+        * For example, if this deconvolution file is located at the 'C:\Users\username\deconv', put the 'ppxf' folder at the same directory so the 'ppxf.py' file will be located at 'C:\Users\username\deconv\ppxf\ppxf.py'
       * Mac/Linux with terminal:
         * execute below commands
           <pre><code>git clone https://github.com/astrohchung/deconv.git
-          cd deconv
+          cd deconv/examples
           </code></pre>
   3. Run Jupyter Notebook. Check this link: https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html
   4. Open "deconv_example_manga.ipynb" jupyter notebook file.
@@ -54,3 +57,4 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
 ## MODIFICATION HISTORY:
     - Haeun Chung, Jul. 5, 2020: Initial Commit
     - Haeun Chung, Jul. 5, 2020: Modify to use miles model templates in pPXF package, remove compression (gzip) command on deconvolved file
+    - Haeun Chung, Jul. 5, 2020: Update instruction for Windows users

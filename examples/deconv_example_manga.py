@@ -18,6 +18,7 @@
 # * ASTROPY: > v3.0.4
 # 
 # (may work with lower version as well)    
+# This code was tested in both Linux/MacOS and Windows
 #     
 # **pPXF needs to be downloaded and installed separately from https://www-astro.physics.ox.ac.uk/~mxc/software/#ppxf**
 
