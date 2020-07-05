@@ -49,4 +49,8 @@ Specifically, this example reproduces the Figure 9 of Chung et. al. 2020 (in pre
           </code></pre>
   3. Run Jupyter Notebook. Check this link: https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html
   4. Open "deconv_example_manga.ipynb" jupyter notebook file.
-  
+
+
+## MODIFICATION HISTORY:
+    - Haeun Chung, Jul. 5, 2020: Initial Commit
+    - Haeun Chung, Jul. 5, 2020: Modify to use miles model templates in pPXF package, remove compression (gzip) command on deconvolved file

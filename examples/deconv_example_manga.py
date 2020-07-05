@@ -289,8 +289,8 @@ def run_deconv(flux, ivar, mask, wave, specres, pri_hdr, flux_hdr, outname):
 
     append_file.close()
 
-    system('gzip -f '+outname)
-    print('gzip -f '+outname)
+#     system('gzip -f '+outname)
+#     print('gzip -f '+outname)
 
 
 outname=cdir+deconv_manga_file
@@ -303,7 +303,7 @@ run_deconv(cube.flux, cube.ivar, cube.mask, cube.wave, cube.specres,
 # * http://www-astro.physics.ox.ac.uk/~mxc/software/#ppxf
 # * pPXF must be installed separately.
 # * pPXF fits template spectrum to the given galaxy spectrum to fit the galaxy kinematics.
-# * In this example, we use only two galaxy templates from MILES library, just to maximize the fitting speed (It is pretty accurate).
+# * In this example, we use only two galaxy templates from MILES library supplied along with pPXF distribution, just to maximize the fitting speed (It is pretty accurate).
 #     * Base MILES models, Vazdekis et al. (2010, MNRAS, 404, 1639) http://miles.iac.es/.
 #     * Unimodel Initial Mass Funcsion (logarithmic slope = 1.3)
 #     * Metalicity (log(Z/Z_solar)=0)
@@ -312,9 +312,10 @@ run_deconv(cube.flux, cube.ivar, cube.mask, cube.wave, cube.specres,
 #         * Mun1.30Zp0.00T10.0000_iPp0.00_baseFe.fits
 #     * Template spectrum resolution: 2.51 Angstrom
 #     * Template are linearly binned.
-#     * These file are identical to the template files supplied along with pPXF.
+#     * Those files are identical to the template files supplied along with pPXF.
 #         * Mun1.30Zp0.00T01.9953_iPp0.00_baseFe_linear_FWHM_2.51.fits
 #         * Mun1.30Zp0.00T10.0000_iPp0.00_baseFe_linear_FWHM_2.51.fits
+#         * supplied along with the pPXF distribution ($pPXF_dir/miles_models)
 # * Full base MILES models can be downloaded from below link
 #     * http://research.iac.es/proyecto/miles/pages/spectral-energy-distributions-seds/miles.php
 # 
@@ -408,7 +409,7 @@ run_ppxf(oricube.flux, oricube.ivar, oricube.mask, oricube.wave,
          oricube.specres, oricube.flux_hdr, ori_outname, oricube.redshift, verbose=verbose)
 
 # Measure 2D LOS from deconvolved MaNGA data
-deconv_manga_file=cdir+'manga-'+plateifu+'-LOGDCCUBE.fits.gz'
+deconv_manga_file=cdir+'manga-'+plateifu+'-LOGDCCUBE.fits'
 deconv_outname=cdir+'manga-'+plateifu+'-LOGDCCUBE_2DLOS.fits'
 dccube=read_cube(plate, ifudsgn, redshift, deconv_manga_file)
 run_ppxf(dccube.flux, dccube.ivar, dccube.mask, dccube.wave, 

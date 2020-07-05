@@ -101,7 +101,7 @@ def cube_deconv(flux, wave, mask, psf_fwhm_func, pixelscale=0.5, niter=20,
     
     dcflux=flux.copy()
     dcmask=mask.copy()
-    
+    print('Start Deconvolution')
     n_finish=0
     t_start=perf_counter()
     for i in range(len(wave)):
