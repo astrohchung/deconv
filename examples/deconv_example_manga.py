@@ -81,11 +81,11 @@ if not path.exists(cdir+ori_manga_file):
 
     sas_url="https://data.sdss.org/sas/"+sas_ver+"/manga/spectro/redux/"+manga_ver+"/"+str(plate)+'/stack/'
     
-    print("Start downloading "+ori_manga_file+" from SDSS server. This may take several minutes.")
-    print("The file is being download from here: ",sas_url+ori_manga_file)
+    print("Start download "+ori_manga_file+" from SDSS server. This may take several minutes.")
+    print("The file is being downloaded from here: ",sas_url+ori_manga_file)
     print('Start download')
     urllib.request.urlretrieve(sas_url+ori_manga_file, cdir+ori_manga_file)
-    print('Downloaded complete')
+    print('Download completed')
 
 
 
@@ -95,20 +95,20 @@ drpall_file='drpall-'+manga_ver+'.fits'
 # download drpall file if not exist.
 if not path.exists(cdir+drpall_file):
     sas_url="https://data.sdss.org/sas/"+sas_ver+"/manga/spectro/redux/"+manga_ver+"/"
-    print("Start downloading "+drpall_file+" from SDSS server. This may take several seconds.")
-    print("The file is being download from here: ",sas_url+drpall_file)
+    print("Start download "+drpall_file+" from SDSS server. This may take several seconds.")
+    print("The file is being downloaded from here: ",sas_url+drpall_file)
     print('Start download')
     urllib.request.urlretrieve(sas_url+drpall_file, cdir+drpall_file)    
-    print('Downloaded complete')
+    print('Download completed')
     
 image_file=plateifu+'.png'
 if not path.exists(cdir+image_file):
     sas_url="https://data.sdss.org/sas/"+sas_ver+"/manga/spectro/redux/"+manga_ver+"/"+str(plate)+'/stack/'
-    print("Start downloading "+image_file+" from SDSS server. This may take several seconds.")
-    print("The file is being download from here: ",sas_url+'/images/'+str(ifudsgn)+'.png')
+    print("Start download "+image_file+" from SDSS server. This may take several seconds.")
+    print("The file is being downloaded from here: ",sas_url+'/images/'+str(ifudsgn)+'.png')
     print('Start download')
     urllib.request.urlretrieve(sas_url+'/images/'+str(ifudsgn)+'.png', cdir+image_file)
-    print('Downloaded complete')
+    print('Download completed')
     
 # Show MaNGA galaxy image
 fig=plt.figure(figsize=(10,10))
